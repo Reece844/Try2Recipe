@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect } from 'react';
 import { render } from 'react-dom';
 import PropTypes from 'prop-types';
-import { Tweet } from 'react-twitter-widgets';
 import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import { FaTags } from 'react-icons/fa';
@@ -21,31 +20,12 @@ const PostTemplate = ({
         date,
         tags = [],
         images = [],
-        tweets = [],
         components = [],
       },
     },
   },
   location,
 }) => {
-  const loadDisqus = useCallback(({ url, identifier, title }) => {
-    const d = global.document;
-
-    if (!d.getElementById('disqus-sdk')) {
-      const s = d.createElement('script');
-
-      s.src = `https://${DISQUS_ID}.disqus.com/embed.js`;
-      s.setAttribute('data-timestamp', Date.now());
-      d.body.appendChild(s);
-    }
-
-    global.disqus_config = function disqusCallback() {
-      this.page.url = url;
-      this.page.identifier = identifier;
-      this.page.title = title;
-    };
-  }, []);
-
   const createCopyButton = useCallback(() => {
     const codes = global.document.querySelectorAll('#post-contents .gatsby-highlight');
 
@@ -84,42 +64,6 @@ const PostTemplate = ({
         console.warn(e); // eslint-disable-line no-console
       }
     }
-  }, []);
-
-  const renderTweets = useCallback((tweets) => {
-    if (Array.isArray(tweets)) {
-      try {
-        tweets.forEach(({ rootId: tweetRootId, tweetId, userId: username }) => {
-          const $tweetContainer = global.document.getElementById(tweetRootId);
-
-          render(
-            <div>
-              <Tweet tweetId={tweetId} options={{ username }} />
-            </div>,
-            $tweetContainer
-          );
-        });
-      } catch (e) {
-        console.warn(e); // eslint-disable-line no-console
-      }
-    }
-  }, []);
-
-  useEffect(() => {
-    const { pathname: identifier } = location;
-    const url = `${SITE_URL}${identifier}`;
-
-    loadDisqus({
-      url,
-      identifier,
-      title,
-    });
-  }, []);
-
-  useEffect(() => {
-    createCopyButton();
-    renderTweets(tweets);
-    renderComponents(components);
   }, []);
 
   const [image = null] = images;
@@ -165,14 +109,6 @@ const PostTemplate = ({
       <PostContent>
         <div id="post-contents" dangerouslySetInnerHTML={{ __html: html }} />
       </PostContent>
-      <div id="disqus_thread" />
-      <noscript>
-        Please enable JavaScript to view the
-        &nbsp;
-        <a href="https://disqus.com/?ref_noscript">
-          comments powered by Disqus.
-        </a>
-      </noscript>
     </PostWrapper>
   );
 };

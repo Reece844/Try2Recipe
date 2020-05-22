@@ -19,7 +19,6 @@ exports.onCreateWebpackConfig = ({
   actions.setWebpackConfig({
     externals: {
       document: true,
-      discus_config: true,
     },
     resolve: {
       alias: {
