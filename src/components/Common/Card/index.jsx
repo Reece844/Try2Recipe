@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Truncate from 'react-truncate';
 import { FaTags } from 'react-icons/fa';
-import formattedDate from '~/utils/formattedDate';
 import { ImageWrapper, TagWrapper, StyledArticle } from './styled';
 
 const Card = ({
@@ -11,7 +10,6 @@ const Card = ({
   path,
   images,
   title,
-  date,
   summary,
 }) => {
   const [image = null] = images;
@@ -66,9 +64,6 @@ const Card = ({
             </Link>
           ))}
         </TagWrapper>
-        <time>
-          {formattedDate(date)}
-        </time>
       </div>
     </StyledArticle>
   );
@@ -79,7 +74,6 @@ Card.propTypes = {
   path: PropTypes.string.isRequired,
   images: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string,
-  date: PropTypes.string,
   summary: PropTypes.string,
 };
 
@@ -87,7 +81,6 @@ Card.defaultProps = {
   tags: [],
   images: [],
   title: '',
-  date: '',
   summary: '',
 };
 

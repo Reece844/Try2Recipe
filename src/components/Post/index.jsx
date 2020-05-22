@@ -8,7 +8,6 @@ import Clipboard from 'clipboard';
 import Bio from '~/components/Bio';
 import PostWrapper from '~/components/Common/PostWrapper';
 import { PREFIX, SITE_URL, DISQUS_ID } from '~/constants';
-import formattedDate from '~/utils/formattedDate';
 import { Tags, PostContent, ImageWrapper, ComponentInPost } from './styled';
 
 const PostTemplate = ({
@@ -17,7 +16,6 @@ const PostTemplate = ({
       html,
       frontmatter: {
         title,
-        date,
         tags = [],
         images = [],
         components = [],
@@ -87,9 +85,6 @@ const PostTemplate = ({
       <h1>
         {title}
       </h1>
-      <time>
-        {formattedDate(date)}
-      </time>
       {tags.length === 0 ? null : (
         <Tags>
           <FaTags />
