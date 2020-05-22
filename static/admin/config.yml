@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/images
+public_folder: /resources/images
+
+collections:
+  - name: "recipe"
+    label: "Recipe"
+    folder: "src/pages"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { name: "summary", label: "Summary", widget: "string" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "images", label: "Images", widget: "list", field: {label: "Image", name: image, widget: "image"}, default: ["images/Grilled-Pork-tenderloin-marinade-HERO.jpg"] }
+      - { name: "tags", label: "Tags", widget: "list", default: ["Steak","Meat"]}
+      - { name: "category", label: "Category", widget: "string", default: "Dinner"}
+      - { name: "summary", label: "Summary", widget: "string", default: "This recipe is yummy"}
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "path", label: "Path", widget: "string", pattern: [/], hint: "Path must start with /" }
