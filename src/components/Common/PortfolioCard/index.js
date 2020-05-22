@@ -52,11 +52,20 @@ const PortfolioCard = styled.section`
   }
 
   h6 {
+    @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+    font-family: 'Kaushan Script';  
     position: absolute;
-    bottom: 16px;
-    left: 16px;
-    font-size: 14px;
-    text-decoration: underline;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    text-shadow:
+    1.5px 1.5px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
   }
 
   h4 {

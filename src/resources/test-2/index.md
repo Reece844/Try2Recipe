@@ -1,11 +1,10 @@
 ---
 type: "portfolio"
-title: "Gatsby Advanced Blog"
+title: "Corn"
 date: "2018-01-02T00:00:00.000Z"
 path: "/portfolios/portfolio-2/"
 images: [
-  "test-2/3.png",
-  "test-2/4.png",
+  "test-2/2.jpg"
 ]
 ---
 
