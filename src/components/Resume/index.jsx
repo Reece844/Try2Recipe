@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { FaPrint, FaGithub, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import Clearfix from '~/components/Common/Clearfix';
 import { PREFIX, AUTHOR, EMAIL, GITHUB_ID, TWITTER_ID, FACEBOOK_ID, LINKEDIN_ID } from '~/constants';
-import * as profileUrl from '~/resources/me.png';
+import * as profileUrl from '~/resources/resume/Dad.jpg';
 import { Wrapper, BasicInformation, SocialInformation, MDInformation, Button } from './styled';
 
 const Resume = ({
@@ -29,10 +29,6 @@ const Resume = ({
     });
   }, []);
 
-  const printPage = useCallback(() => {
-    global.print();
-  }, []);
-
   return (
     <Wrapper>
       <Clearfix>
@@ -42,13 +38,13 @@ const Resume = ({
           </title>
           <meta name="og:title" content={`${PREFIX}RESUME`} />
         </Helmet>
-        <Clearfix>
-          <Button type="button" onClick={printPage}>
-            <FaPrint />
-            Print
-          </Button>
-        </Clearfix>
         <BasicInformation>
+          <img
+            src={profileUrl.default}
+            alt=""
+            width="270"
+            height="400"
+          />
           <h1>
             {AUTHOR}
           </h1>

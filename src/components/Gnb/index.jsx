@@ -131,7 +131,7 @@ const Gnb = ({
             </ListMenu>
             <ListMenu>
               <StyledLink to="/pages/1" className={isPost ? 'active' : ''} onClick={toggleMenu}>
-                Posts
+                Recipes
               </StyledLink>
               {categories.length > 0
                 ? (
@@ -169,13 +169,13 @@ const Gnb = ({
             {hasPortfolio ? (
               <ListMenu>
                 <StyledLink to="/portfolios" className={isPortfolio ? 'active' : ''} onClick={toggleMenu}>
-                  Portfolio
+                  Categories
                 </StyledLink>
               </ListMenu>
             ) : null}
             <ListMenu>
               <StyledLink to="/resume" className={isResume ? 'active' : ''} onClick={toggleMenu}>
-                Resume
+                About
               </StyledLink>
             </ListMenu>
             <SearchBarWrapper>
@@ -240,7 +240,7 @@ const Gnb = ({
         </ListMenu>
         <ListMenu>
           <StyledLink to="/pages/1" className={isPost ? 'active' : ''}>
-            Posts
+            Recipes
             &nbsp;
             {categories.length > 0 ? <FaCaretDown /> : null}
           </StyledLink>
@@ -269,13 +269,13 @@ const Gnb = ({
         {hasPortfolio ? (
           <ListMenu>
             <StyledLink to="/portfolios" className={isPortfolio ? 'active' : ''}>
-              Portfolio
+              Categories
             </StyledLink>
           </ListMenu>
         ) : null}
         <ListMenu>
           <StyledLink to="/resume" className={isResume ? 'active' : ''}>
-            Resume
+            About
           </StyledLink>
         </ListMenu>
       </List>

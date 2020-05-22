@@ -31,16 +31,7 @@ export const BasicInformation = styled.section`
   }
 
   img {
-    border-radius: 50%;
-  }
-`;
-
-export const SocialInformation = styled.section`
-  font-size: 20px;
-  text-align: center;
-
-  a {
-    padding: 0 6px;
+    border-radius: 10%;
   }
 `;
 
