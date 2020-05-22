@@ -6,18 +6,17 @@ exports.PORTFOLIO = 'portfolio';
 exports.RESUME = 'resume';
 
 // Site Information
-exports.NAME = 'Gatsby Advanced Blog';
-exports.TITLE = 'Gatsby Advanced Blog';
-exports.PREFIX = 'WONISM | ';
-exports.DESCRIPTION = 'Create your own blog with Gatsby Advanced Blog';
-exports.AUTHOR = 'wonism';
+exports.NAME = 'Bapa\'s Kitchen';
+exports.TITLE = 'Bapa\'s Kitchen';
+exports.PREFIX = 'Robert Engl | ';
+exports.AUTHOR = 'Robert Engl';
 exports.EMAIL = 'yocee57@gmail.com';
 exports.KEYWORDS = [
   'Gatsby',
   'ReactJS',
 ].join(', ');
 exports.SITE_URL = 'https://wonism.github.io';
-exports.PROFILE = 'https://avatars3.githubusercontent.com/u/42737121?s=200&v=4';
+
 
 // Social
 exports.GITHUB_ID = 'wonism';

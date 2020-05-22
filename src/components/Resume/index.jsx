@@ -49,12 +49,6 @@ const Resume = ({
           </Button>
         </Clearfix>
         <BasicInformation>
-          <img
-            src={profileUrl.default}
-            alt=""
-            width="120"
-            height="120"
-          />
           <h1>
             {AUTHOR}
           </h1>

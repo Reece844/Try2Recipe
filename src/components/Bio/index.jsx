@@ -1,5 +1,5 @@
 import React from 'react';
-import { AUTHOR, DESCRIPTION, SITE_URL, PROFILE } from '~/constants';
+import { AUTHOR, SITE_URL, PROFILE } from '~/constants';
 import { Wrapper } from './styled';
 
 const Bio = () => (
@@ -9,18 +9,9 @@ const Bio = () => (
       target="_blank"
       rel="noreferrer noopener"
     >
-      <img
-        src={PROFILE}
-        width="48"
-        height="48"
-        alt=""
-      />
       <span>
         {AUTHOR}
         <br />
-        <small>
-          {DESCRIPTION}
-        </small>
       </span>
     </a>
   </Wrapper>
