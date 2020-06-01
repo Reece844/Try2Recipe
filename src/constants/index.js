@@ -15,7 +15,7 @@ exports.KEYWORDS = [
   'Gatsby',
   'ReactJS',
 ].join(', ');
-exports.SITE_URL = '';
+exports.SITE_URL = 'jaimo.com';
 
 
 // Social
