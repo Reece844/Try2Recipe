@@ -13,7 +13,7 @@ collections:
     create: true
     fields:
       - { name: "title", label: "Title", widget: "string" }
-      - { name: "image", label: "Image", widget: "list", field: {label: "Image", name: image, widget: "image"}, default: ["images/Grilled-Pork-tenderloin-marinade-HERO.jpg"] }
+      - { name: "image", label: "Image", widget: "image"}
       - { name: "tags", label: "Tags", widget: "list", field: {label: "Tag", name: "tag_name",widget: "string"}, default: ["Steak","Meat"]}
       - { name: "category", label: "Category", widget: "string", default: "Dinner"}
       - { name: "summary", label: "Summary", widget: "string", default: "This recipe is yummy"}
