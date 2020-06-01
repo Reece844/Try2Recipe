@@ -14,9 +14,9 @@ collections:
     fields:
       - { name: "title", label: "Title", widget: "string" }
       - { name: "image", label: "Image", widget: "list", field: {label: "Image", name: image, widget: "image"}, default: ["images/Grilled-Pork-tenderloin-marinade-HERO.jpg"] }
-      - { name: "tags", label: "Tags", widget: "list", default: ["Steak","Meat"]}
+      - { name: "tags", label: "Tags", widget: "list", field: {label: "Tag", name: "tag_name",widget: "string"}, default: ["Steak","Meat"]}
       - { name: "category", label: "Category", widget: "string", default: "Dinner"}
       - { name: "summary", label: "Summary", widget: "string", default: "This recipe is yummy"}
       - { name: "body", label: "Body", widget: "markdown" }
-      - { name: "ingredients", label: "Ingredients", widget: "list" }
+      - { name: "ingredients", label: "Ingredients", widget: "list",field: {label: "Ingredient", name: "ingredient_name",widget: "string"} }
       - { name: "path", label: "Path", widget: "string", pattern: [/], hint: "Path must start with /" }
