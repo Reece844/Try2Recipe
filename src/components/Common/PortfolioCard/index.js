@@ -8,6 +8,8 @@ const PortfolioCard = styled.section`
   width: 50%;
   height: 0;
   background-color: #eee;
+  @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
   overflow: hidden;
   @media (max-width: 414px) {
     padding: 56.25% 0 0;

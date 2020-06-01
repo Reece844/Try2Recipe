@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const PostsWrapper = styled.section`
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
   margin: auto;
   padding: 120px 0 0;
   max-width: 1176px;

@@ -36,6 +36,7 @@ export const TagWrapper = styled.div`
 
 export const StyledArticle = styled.article`
   display: inline-block;
+  word-wrap: break-word;
   padding: 10px 10px 16px;
   width: 25%;
   font-size: 14px;
@@ -88,11 +89,12 @@ export const StyledArticle = styled.article`
   }
 
   p {
-    padding: 24px 0 16px;
+    padding: 24px 0px 16px;
     height: 106px;
     line-height: 1.4em;
-    font-size: 16px;
+    font-size: 14px;
 
+    word-wrap: break-word;
     span {
       white-space: nowrap;
     }
