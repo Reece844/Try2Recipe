@@ -15,7 +15,7 @@ exports.KEYWORDS = [
   'Gatsby',
   'ReactJS',
 ].join(', ');
-exports.SITE_URL = 'jaimo.com';
+exports.SITE_URL = 'https://github.com/Reece844/Try2Recipe';
 
 
 // Social
