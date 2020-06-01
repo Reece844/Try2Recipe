@@ -1,9 +1,8 @@
 ---
+path: "/resume/"
 type: "resume"
 title: "Resume"
 date: "2000-01-01T00:00:00.000Z"
-path: "/resume/"
-image: ./yoda.jpg
 ---
 
 ## Experience

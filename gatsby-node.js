@@ -95,7 +95,7 @@ exports.createPages = ({ graphql, actions }) => {
                 component = post;
                 break;
             }
-
+            console.log(component);
             if (component !== null) {
               createPage({
                 path,
