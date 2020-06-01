@@ -4,13 +4,14 @@ import { Wrapper } from './styled';
 
 const Bio = () => (
   <Wrapper>
+    
     <a
       href={SITE_URL}
       target="_blank"
       rel="noreferrer noopener"
     >
       <span>
-        {AUTHOR}
+        by {AUTHOR}
         <br />
       </span>
     </a>

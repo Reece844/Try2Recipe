@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '~/components/layout';
 import Post from '~/components/Post';
+import Img from "gatsby-image"
+
 
 const PostTemplate = props => (
   <Layout {...props}>
@@ -20,27 +22,27 @@ export const pageQuery = graphql`
         homepage
       }
     }
-    post: markdownRemark (
-      frontmatter: { path: { eq: $path } }
-    ) {
+    post: markdownRemark (frontmatter: { path: { eq: $path } }) {
       id
       html
       frontmatter {
         title
         path
-        images
         category
         tags
         date
+        ingredients
         components {
           rootId
           fileName
         }
-        tweets {
-          rootId
-          userId
-          tweetId
-        } summary
+        image {
+          childImageSharp {
+            fluid(maxWidth: 500, maxHeight:500) {
+              ...GatsbyImageSharpFluid
+            }
+          }          
+        }
       }
     }
   }

@@ -1,11 +1,9 @@
 ---
 type: "portfolio"
-title: "Artichoke"
+title: "Dessert"
 date: "2018-01-04:00:00.000Z"
 path: "/portfolios/portfolio-4/"
-images: [
-  "test-4/4.jpg"
-]
+image: /../4.jpg
 ---
 
 # Gatsby Advanced Blog

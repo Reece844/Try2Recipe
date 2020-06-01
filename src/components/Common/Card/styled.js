@@ -16,7 +16,7 @@ export const ImageWrapper = styled.figure`
     clear: both;
   }
 
-  img {
+  Img {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -36,7 +36,7 @@ export const TagWrapper = styled.div`
 
 export const StyledArticle = styled.article`
   display: inline-block;
-  padding: 0 16px 16px;
+  padding: 10px 10px 16px;
   width: 25%;
   font-size: 14px;
   vertical-align: top;
@@ -67,16 +67,17 @@ export const StyledArticle = styled.article`
       h3,
       p,
       small {
-        text-decoration: underline;
       }
     }
   }
 
   h3 {
-    padding: 0 0 6px;
+    padding: 8px 0 6px;
+    @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+    font-family: 'Kaushan Script'; 
     height: 2.4em;
     line-height: 1.2em;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
   }
 

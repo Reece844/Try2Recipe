@@ -20,7 +20,14 @@ const Layout = ({ children, location }) => (
                 category
                 summary
                 tags
-                images
+                image {
+                  publicURL
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }          
+                }
               }
             }
           }

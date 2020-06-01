@@ -23,8 +23,8 @@ const List = ({ data, location }) => {
           </title>
           <meta name="og:title" content={`${PREFIX}POST`} />
         </Helmet>
-        {posts.map(({ node: { frontmatter: { images, tags, path, ...otherProps } } }) => (
-          <Card key={path} path={path} images={images} tags={tags} {...otherProps} />
+        {posts.map(({ node: { frontmatter: { image, tags, path, ...otherProps } } }) => (
+          <Card key={path} path={path} image={image} tags={tags} {...otherProps} />
         ))}
       </PostsWrapper>
       <Pagination postCount={postCount} location={location} />

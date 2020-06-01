@@ -4,13 +4,19 @@ import Helmet from 'react-helmet';
 import { FaPrint, FaGithub, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import Clearfix from '~/components/Common/Clearfix';
 import { PREFIX, AUTHOR, EMAIL, GITHUB_ID, TWITTER_ID, FACEBOOK_ID, LINKEDIN_ID } from '~/constants';
-import * as profileUrl from '~/resources/resume/Dad.jpg';
 import { Wrapper, BasicInformation, SocialInformation, MDInformation, Button } from './styled';
+import Img from "gatsby-image";
+
 
 const Resume = ({
   data: {
     resume: {
       html,
+    },
+    dad: {
+      childImageSharp: {
+        fluid
+      }
     },
   },
 }) => {
@@ -39,12 +45,7 @@ const Resume = ({
           <meta name="og:title" content={`${PREFIX}RESUME`} />
         </Helmet>
         <BasicInformation>
-          <img
-            src={profileUrl.default}
-            alt=""
-            width="270"
-            height="400"
-          />
+        <Img fluid={fluid} />
           <h1>
             {AUTHOR}
           </h1>

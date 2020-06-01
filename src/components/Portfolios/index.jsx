@@ -5,6 +5,7 @@ import { Link } from 'gatsby';
 import PortfolioCard from '~/components/Common/PortfolioCard';
 import { PREFIX } from '~/constants';
 import { Wrapper } from './styled';
+import Img from "gatsby-image";
 
 const Portfolios = ({ data: { portfolios: { edges: portfolios } } }) => (
   <Wrapper>
@@ -14,18 +15,15 @@ const Portfolios = ({ data: { portfolios: { edges: portfolios } } }) => (
       </title>
       <meta name="og:title" content={`${PREFIX}PORTFOLIOS`} />
     </Helmet>
-    {portfolios.map(({ node: { frontmatter: { path, title, images = [] } } }) => {
-      const [image = null] = images;
+    {portfolios.map(({ node: { frontmatter: { path, title, image} } }) => {
 
       if (image !== null) {
         return (
           <PortfolioCard key={path}>
             <Link to={path}>
-              {image.includes('//') ? (
-                <img src={image} alt="portfolio" />
-              ) : (
-                <img src={require(`~/resources/${image}`)} alt="portfolio" />
-              )}
+              
+                <Img fluid={image.childImageSharp.fluid} alt="portfolio" />
+              
               <h6>
                 {title}
               </h6>

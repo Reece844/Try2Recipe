@@ -35,7 +35,13 @@ export const pageQuery = graphql`
             type
             title
             path
-            images
+            image {
+              childImageSharp {
+                fluid(quality:100, maxHeight: 100, maxWidth:100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }          
+            }
             date
           }
         }

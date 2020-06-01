@@ -9,17 +9,28 @@ const PostWrapper = styled.section`
     padding: 70px 16px 0;
   }
 
+  Img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
   &:before,
   &:after {
     display: block;
     content: '';
     clear: both;
   }
-
+  border-bottom-width: 3px;
   h1 {
     margin: .67em 0;
-    font-size: 36px;
+    font-size: 44px;
+    font-family: 'Kaushan Script';
+    font-weight: 700;
+    border-bottom-width: 3px;
   }
+
 
   time {
     margin: 1em 0;

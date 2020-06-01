@@ -1,11 +1,10 @@
 ---
 type: "portfolio"
-title: "Corn"
+title: "Italian"
 date: "2018-01-02T00:00:00.000Z"
 path: "/portfolios/portfolio-2/"
-images: [
-  "test-2/2.jpg"
-]
+image: /../yoda.jpg
+
 ---
 
 # Gatsby Advanced Blog

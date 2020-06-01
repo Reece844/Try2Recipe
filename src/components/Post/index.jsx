@@ -8,7 +8,9 @@ import Clipboard from 'clipboard';
 import Bio from '~/components/Bio';
 import PostWrapper from '~/components/Common/PostWrapper';
 import { PREFIX, SITE_URL, DISQUS_ID } from '~/constants';
-import { Tags, PostContent, ImageWrapper, ComponentInPost } from './styled';
+import { Tags, PostContent, ImageWrapper, ComponentInPost,IngContent, PTitle, TestInPost } from './styled';
+import Img from "gatsby-image"
+
 
 const PostTemplate = ({
   data: {
@@ -17,7 +19,12 @@ const PostTemplate = ({
       frontmatter: {
         title,
         tags = [],
-        images = [],
+        ingredients = [],
+        image: {
+          childImageSharp: {
+            fluid
+          }
+        },
         components = [],
       },
     },
@@ -64,7 +71,7 @@ const PostTemplate = ({
     }
   }, []);
 
-  const [image = null] = images;
+  const imt = fluid;
 
   return (
     <PostWrapper>
@@ -74,17 +81,10 @@ const PostTemplate = ({
         </title>
         <meta name="og:title" content={`${PREFIX}${title}`} />
       </Helmet>
-      {image === null ? null : (
-        <ImageWrapper>
-          <img
-            src={image.includes('//') ? image : require(`~/resources/${image}`)}
-            alt={title}
-          />
-        </ImageWrapper>
-      )}
-      <h1>
+      <PTitle>
         {title}
-      </h1>
+      </PTitle>
+      <ImageWrapper><Img fluid={imt} /></ImageWrapper>  
       {tags.length === 0 ? null : (
         <Tags>
           <FaTags />
@@ -94,17 +94,32 @@ const PostTemplate = ({
               to={`/tags/${tag}/1`}
             >
               <small>
-                {tag}
+                {tag},
               </small>
             </Link>
           ))}
         </Tags>
-      )}
+      )}          
       <Bio />
+
+      <IngContent>
+      <fieldset>
+        <legend>Ingredients</legend>
+        <ul>
+        {ingredients.map(ingredient => (
+            <li>{ingredient}</li>
+          ))}
+          </ul>
+        </fieldset>
+      </IngContent>
       <PostContent>
-        <div id="post-contents" dangerouslySetInnerHTML={{ __html: html }} />
+      <fieldset>
+        <legend>Directions</legend>
+        <h2><div id="post-contents" dangerouslySetInnerHTML={{ __html: html }} /></h2>
+        </fieldset>
       </PostContent>
     </PostWrapper>
+    
   );
 };
 

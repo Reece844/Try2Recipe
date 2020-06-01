@@ -20,7 +20,7 @@ const PortfolioCard = styled.section`
   }
 
   &:hover {
-    img {
+    Img {
       width: 110%;
     }
 
@@ -39,7 +39,7 @@ const PortfolioCard = styled.section`
     color: #000;
   }
 
-  img {
+  Img {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -48,9 +48,14 @@ const PortfolioCard = styled.section`
     margin: auto;
     width: 100%;
     height: auto;
-    transition: all .4s ease 0s;
+  transition: all .4s ease 0s;  
   }
 
+  &:hover {
+    top: -8px;
+    transition: all .4s ease 0s;  
+    
+  }
   h6 {
     @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
     font-family: 'Kaushan Script';  

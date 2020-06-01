@@ -20,14 +20,21 @@ export const pageQuery = graphql`
         homepage
       }
     }
-    resume: markdownRemark (
-      frontmatter: { path: { eq: $path } }
-    ) {
+    resume: markdownRemark (frontmatter: { path: { eq: $path } }) {
       id
       html
       frontmatter {
         title
         date
+        path
+      }
+    }
+    dad: file(relativePath: { eq:"DadImg.jpg" }){
+      childImageSharp{
+        fluid {
+          ...GatsbyImageSharpFluid
+
+        }
       }
     }
   }

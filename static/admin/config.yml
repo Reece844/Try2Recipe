@@ -14,7 +14,7 @@ collections:
     fields:
       - { name: "summary", label: "Summary", widget: "string" }
       - { name: "title", label: "Title", widget: "string" }
-      - { name: "images", label: "Images", widget: "list", field: {label: "Image", name: image, widget: "image"}, default: ["images/Grilled-Pork-tenderloin-marinade-HERO.jpg"] }
+      - { name: "image", label: "Image", widget: "list", field: {label: "Image", name: image, widget: "image"}, default: ["images/Grilled-Pork-tenderloin-marinade-HERO.jpg"] }
       - { name: "tags", label: "Tags", widget: "list", default: ["Steak","Meat"]}
       - { name: "category", label: "Category", widget: "string", default: "Dinner"}
       - { name: "summary", label: "Summary", widget: "string", default: "This recipe is yummy"}

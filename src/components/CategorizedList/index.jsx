@@ -31,8 +31,8 @@ const CategorizedList = ({ data, location }) => {
             No posts.
           </div>
         ) : null}
-        {posts.map(({ node: { frontmatter: { images, tags, path, ...otherProps } } }) => (
-          <Card key={path} path={path} images={images} tags={tags} {...otherProps} />
+        {posts.map(({ node: { frontmatter: { image, tags, path, ...otherProps } } }) => (
+          <Card key={path} path={path} image={image} tags={tags} {...otherProps} />
         ))}
       </PostsWrapper>
       <Pagination

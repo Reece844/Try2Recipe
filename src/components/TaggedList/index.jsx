@@ -31,8 +31,8 @@ const TaggedList = ({ data, location }) => {
             No posts.
           </div>
         ) : null}
-        {posts.map(({ node: { frontmatter: { images, tags, path, ...otherProps } } }) => (
-          <Card key={path} path={path} tags={tags} images={images} {...otherProps} />
+        {posts.map(({ node: { frontmatter: { tags, path,image, ...otherProps} } }) => (
+          <Card key={path} path={path} tags={tags} image={image} {...otherProps} />
         ))}
       </PostsWrapper>
       <Pagination

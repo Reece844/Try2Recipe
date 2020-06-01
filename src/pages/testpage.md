@@ -1,26 +1,31 @@
 ---
 path: "/testpage/"
 category: "test"
+type: "post"
 tags: ["Dinner", "Meat"]
-title: "Tester"
+title: "Baby Yoda's Favorite Stew"
 date: "2018-01-01T00:00:00.000Z"
-summary: "asdfasdfasdfasdf"
-images: ["Grilled-Pork-tenderloin-marinade-HERO.jpg"]
+summary: "This is baby yoda's favorite stew that he likes to make when he doesn't feel good."
+image: /../yoda.jpg
+ingredients: ["1 cup flour","2 cups of water", "pinch of salt","tablespoon of sauce"]
 ---
 
-> 1/4 cup	brown sugar
 
-> 1/2 tsp	ginger
+1.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-> 2 cloves	chopped garlic
+2.Suspendisse dapibus tortor et viverra aliquet.
 
-> 1/2 cup	soy sauce
+3.Ut non lacus quis nibh ultrices maximus ac at ipsum.In non lacus eu justo pulvinar ornare ut sit amet sem.
+Cras fringilla massa sed libero luctus vulputate.
 
-> 1/4 cup	water
+4.Vivamus eget nisl quis diam mattis lobortis.
 
-> 2 Tbsp	oil
+5.Vestibulum ut elit vitae nunc sollicitudin aliquam vitae et augue.
 
-> 1/2 tsp	pepper
+6.Proin ac nulla a quam tincidunt placerat.
 
+7.Donec fermentum risus eget molestie tincidunt.
 
-Mix all ingredients together and put inside a ziplock bag with meat. Let it marinate overnight or longer.
+8.Curabitur consequat velit in purus placerat, non blandit arcu tempor.
+In non lacus eu justo pulvinar ornare ut sit amet sem.
+Cras fringilla massa sed libero luctus vulputate.

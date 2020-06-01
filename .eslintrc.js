@@ -11,16 +11,6 @@ module.exports = {
     browser: true,
   },
   rules: {
-    'comma-dangle': [
-      error,
-      {
-        arrays: 'always-multiline',
-        objects: 'always-multiline',
-        imports: 'always-multiline',
-        exports: 'always-multiline',
-        functions: 'only-multiline',
-      },
-    ],
     'function-paren-newline': [error, 'consistent'],
     'global-require': off,
     'implicit-arrow-linebreak': off,
@@ -48,11 +38,9 @@ module.exports = {
     'max-len': [error, 150, { ignoreComments: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
     'no-console': error,
     'no-lonely-if': off,
-    'no-multiple-empty-lines': [error, { max: error, maxEOF: error }],
     'no-implicit-coercion': error,
     'no-shadow': off,
     'no-underscore-dangle': off,
-    'no-unused-vars': [error, { args: 'after-used', ignoreRestSiblings: false }],
     'object-curly-newline': [error, { consistent: true }],
     'prefer-spread': off,
     'react/jsx-filename-extension': [error, { extensions: ['.js', '.jsx'] }],

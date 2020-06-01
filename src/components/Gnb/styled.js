@@ -48,10 +48,11 @@ export const GnbWrapper = styled.div`
   @import url("https://fonts.googleapis.com/css?family=Lato");
   position: fixed;
   width: 100%;
-  font-size: 14px;
-  font-family: Lato;
-  font-weight: 600;
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder;
   z-index: 3000;
+  background-color: 	#FFFFFF;
 
   @media (max-width: 414px) {
     height: 60px;
@@ -95,7 +96,7 @@ export const ListMenu = styled.li`
   display: inline-block;
   position: relative;
   padding: 0 0 0 2em;
-  font-weight: 500;
+  font-weight: 10000;
 
   @media (max-width: 414px) {
     display: none;

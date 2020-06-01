@@ -15,7 +15,7 @@ exports.KEYWORDS = [
   'Gatsby',
   'ReactJS',
 ].join(', ');
-exports.SITE_URL = 'https://wonism.github.io';
+exports.SITE_URL = '';
 
 
 // Social

@@ -1,11 +1,9 @@
 ---
 type: "portfolio"
-title: "Chex Mix"
+title: "Dinner"
 date: "2018-01-01T00:00:00.000Z"
 path: "/portfolios/portfolio-1/"
-images: [
-  "test-1/1.jpg"
-]
+image: /../4.jpg
 ---
 
 # Gatsby Advanced Blog

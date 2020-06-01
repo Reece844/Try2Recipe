@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { PREFIX } from '~/constants';
 import { Wrapper, PortfolioDescription, PortfolioImages } from './styled';
+import Img from "gatsby-image";
 
-const Portfolio = ({ data: { portfolio: { frontmatter: { title, images }, html } } }) => (
+const Portfolio = ({ data: { portfolio: { frontmatter: { title, image }, html } } }) => (
   <Wrapper>
     <Helmet>
       <title>
@@ -12,31 +13,17 @@ const Portfolio = ({ data: { portfolio: { frontmatter: { title, images }, html }
       </title>
       <meta name="og:title" content={`${PREFIX}${title.toUpperCase()}`} />
     </Helmet>
+
     <PortfolioDescription>
       <section dangerouslySetInnerHTML={{ __html: html }} />
     </PortfolioDescription>
-    <PortfolioImages>
-      {images.map((image) => {
-        if (image.includes('//')) {
-          return (
-            <img
-              key={image}
-              src={image}
-              alt={title}
-            />
-          );
-        }
-
-        const url = require(`~/resources/${image}`);
-
-        return (
-          <img
-            key={image}
-            src={url}
+    <PortfolioImages>  
+          <Img
+            fluid={image.childImageSharp.fluid}
             alt={title}
+            width="270px"
+            height="400px"
           />
-        );
-      })}
     </PortfolioImages>
   </Wrapper>
 );

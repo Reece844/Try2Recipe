@@ -25,7 +25,14 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        images
+        image {
+          publicURL
+          childImageSharp {
+            fluid(quality:100, maxWidth: 400, maxHeight:400) {
+              ...GatsbyImageSharpFluid
+            }
+          }          
+        }
         date
       }
     }

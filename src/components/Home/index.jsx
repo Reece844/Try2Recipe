@@ -7,6 +7,7 @@ import SimpleWrapper from '~/components/Common/SimpleWrapper';
 import PortfolioCard from '~/components/Common/PortfolioCard';
 import { TITLE } from '~/constants';
 import { Title } from './styled';
+import Img from "gatsby-image"
 
 const Home = ({ portfolios }) => (
   <>
@@ -25,32 +26,15 @@ const Home = ({ portfolios }) => (
       <SimpleWrapper>
         {portfolios
           .slice(0, 4)
-          .map(({ node: { frontmatter: { path, title, images } } }) => {
-            const image = Array.isArray(images) ? images[0] : null;
-
-            if (image !== null) {
-              return (
-                <PortfolioCard key={path}>
-                  <Link to={path}>
-                    {image.includes('//') ? (
-                      <img src={image} alt="portfolio" />
-                    ) : (
-                      <img src={require(`~/resources/${image}`)} alt="portfolio" />
-                    )}
-                    <h6>
-                      {title}
-                    </h6>
-                  </Link>
-                </PortfolioCard>
-              );
-            }
-
+          .map(({ node: { frontmatter: { path, title} }, node: { frontmatter: {image:{childImageSharp:{fluid}}} }}) => {
+            let test = fluid;
             return (
-              <PortfolioCard key={path}>
-                <Link to={path}>
-                  <h4>
+              <PortfolioCard key={path}> 
+                <Link to={`/tags/${title}/1`}>
+                <Img fluid={test} />
+                  <h6>
                     {title}
-                  </h4>
+                  </h6>
                 </Link>
               </PortfolioCard>
             );

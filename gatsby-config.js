@@ -12,23 +12,16 @@ module.exports = {
   pathPrefix: '/',
   plugins: [
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/resources`,
-        name: 'resources',
-      },
+      resolve: `gatsby-source-filesystem`,
+          options: {
+              path: `${__dirname}/static/assets`,
+          },
     },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+        'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -50,6 +43,22 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/resources`,
+        name: 'resources',
       },
     },
     {
