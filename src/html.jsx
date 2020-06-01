@@ -18,6 +18,7 @@ export default class HTML extends Component {
       <html {...htmlAttributes} lang="ko">
         <head>
           {headComponents}
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
           <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
           <meta httpEquiv="Access-Control-Allow-Origin" content="*" />
           <meta httpEquiv="Access-Control-Allow-Headers" content="*" />
