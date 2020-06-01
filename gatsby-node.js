@@ -180,6 +180,7 @@ exports.createPages = ({ graphql, actions }) => {
           const categorizedListPages = Array.from(new Array(categorizedListCount), (el, i) => i + 1);
 
           categorizedListPages.forEach((categorizedListPage) => {
+            console.log({category});
             createPage({
               path: `/categories/${category}/${categorizedListPage}`,
               component: categorizedList,

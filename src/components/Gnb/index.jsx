@@ -166,13 +166,6 @@ const Gnb = ({
                 </div>
               </SubMenu>
             </ListMenu>
-            {hasPortfolio ? (
-              <ListMenu>
-                <StyledLink to="/portfolios" className={isPortfolio ? 'active' : ''} onClick={toggleMenu}>
-                  Categories
-                </StyledLink>
-              </ListMenu>
-            ) : null}
             <ListMenu>
               <StyledLink to="/resume" className={isResume ? 'active' : ''} onClick={toggleMenu}>
                 About
