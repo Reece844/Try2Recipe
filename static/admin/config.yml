@@ -19,4 +19,5 @@ collections:
       - { name: "category", label: "Category", widget: "string", default: "Dinner"}
       - { name: "summary", label: "Summary", widget: "string", default: "This recipe is yummy"}
       - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "ingredients", label: "Ingredients", widget: "list" }
       - { name: "path", label: "Path", widget: "string", pattern: [/], hint: "Path must start with /" }
