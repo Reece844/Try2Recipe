@@ -12,6 +12,7 @@ import Img from "gatsby-image"
 const Home = ({ portfolios }) => (
   <>
     <Helmet>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
       <title>
         {TITLE}
       </title>

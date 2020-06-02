@@ -38,8 +38,9 @@ export const pageQuery = graphql`
         }
         image {
           childImageSharp {
-            fluid(maxWidth: 500, maxHeight:500) {
+            fluid(quality:100, maxWidth: 500, maxHeight:500) {
               ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }          
         }

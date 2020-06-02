@@ -21,6 +21,7 @@ const CategorizedList = ({ data, location }) => {
     <>
       <PostsWrapper>
         <Helmet>
+          <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
           <title>
             {`${PREFIX}${category.toUpperCase()}`}
           </title>

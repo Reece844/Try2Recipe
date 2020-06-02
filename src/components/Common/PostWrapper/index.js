@@ -37,7 +37,6 @@ const PostWrapper = styled.section`
     font-size: 14px;
   }
 
-  @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
   /**
    * based on zenburn.css

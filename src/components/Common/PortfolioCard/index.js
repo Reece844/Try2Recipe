@@ -8,7 +8,6 @@ const PortfolioCard = styled.section`
   width: 50%;
   height: 0;
   background-color: #eee;
-  @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 
   overflow: hidden;
   @media (max-width: 414px) {
@@ -42,7 +41,7 @@ const PortfolioCard = styled.section`
   }
 
   Img {
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
     right: 0;
@@ -59,7 +58,6 @@ const PortfolioCard = styled.section`
     
   }
   h6 {
-    @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
     font-family: 'Kaushan Script';  
     position: absolute;
     top: 50%;

@@ -8,6 +8,7 @@ import Img from "gatsby-image";
 const Portfolio = ({ data: { portfolio: { frontmatter: { title, image }, html } } }) => (
   <Wrapper>
     <Helmet>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
       <title>
         {`${PREFIX}${title.toUpperCase()}`}
       </title>

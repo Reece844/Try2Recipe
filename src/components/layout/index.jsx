@@ -3,6 +3,25 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { POST, PORTFOLIO } from '~/constants';
 import App from '~/components/App';
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+  @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Kaushan Script'; 
+
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Kaushan Script'; 
+  }
+`;
+
 
 const Layout = ({ children, location }) => (
   <StaticQuery
@@ -35,6 +54,7 @@ const Layout = ({ children, location }) => (
       }
     `}
     render={({ posts }) => {
+      <GlobalStyle />
       const { edges } = posts;
       const portfolios = edges.filter(({ node: { frontmatter: { type } } }) => type === PORTFOLIO);
       const categories = edges.reduce((categories, { node }) => {

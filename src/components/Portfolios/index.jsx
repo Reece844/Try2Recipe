@@ -10,6 +10,7 @@ import Img from "gatsby-image";
 const Portfolios = ({ data: { portfolios: { edges: portfolios } } }) => (
   <Wrapper>
     <Helmet>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
       <title>
         {`${PREFIX}PORTFOLIOS`}
       </title>

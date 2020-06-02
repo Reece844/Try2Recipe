@@ -23,9 +23,10 @@ const Card = ({
       <div>
         <Link to={path}>
         {image === null ? null : (
-          <Img
+         <ImageWrapper><Img
             fluid={image}
-          />
+            imgStyle={{objectfit: "contain"}}
+          /></ImageWrapper>
       )}
           <h3>
             <Truncate

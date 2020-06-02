@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
-  @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
   position: absolute;
   top: 0;
   bottom: 0;

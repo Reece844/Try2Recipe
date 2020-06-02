@@ -34,7 +34,7 @@ export const IngContent = styled.section`
 
     padding: 0 0 20px 36px;
 
-  width: 30%;
+  width: 35%;
   text-align: left;
   position: relative;
   float:left;
@@ -44,7 +44,7 @@ export const IngContent = styled.section`
   font-weight:600;
 
   ul {
-    padding: 0 0 20px 36px;
+    padding: 0 0 10px 20px;
     font-size: 16px;
     font-weight:565;
   }
@@ -65,8 +65,8 @@ export const IngContent = styled.section`
     border: 2px solid #2e2d2d
   }
   legend {
-    padding: 0.2em 0.5em;
-    margin-left: 0.6em;
+    padding: 0.2em 0.3em;
+    margin-left: 0.2em;
     font-size:28px;
     text-align:left;
     position: relative;
@@ -94,7 +94,6 @@ export const IngContent = styled.section`
   
 `;
 export const PostContent = styled.fieldset`
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
   line-height: 1.6em;
   right: 0%;
   width: 65%;
@@ -110,7 +109,8 @@ export const PostContent = styled.fieldset`
   
 
   h2 {
-    padding: 0 0 20px 36px;
+    padding: 0 5px 20px 20px;
+    
     font-size: 16px;
     font-weight:565;
   }
@@ -143,8 +143,8 @@ export const PostContent = styled.fieldset`
     border: 2px solid #2e2d2d
   }
   legend {
-    padding: 0.2em 0.5em;
-    margin-left: 0.6em;
+    padding: 0.2em 0.3em;
+    margin-left: 0.2em;
     font-size:28px;
     text-align:left;
     position: relative;

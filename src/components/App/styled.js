@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   color: ${({ theme: { color } }) => color};
   background-color: ${({ theme: { backgroundColor } }) => backgroundColor};
-  @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 
   @media print {
     & > nav,
