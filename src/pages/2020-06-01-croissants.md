@@ -7,6 +7,7 @@ tags:
   - Breakfast
 category: Bread
 summary: Good and fast croissant
+author: Bob
 ingredients:
   - 500g Flour
   - 1 Cup of water

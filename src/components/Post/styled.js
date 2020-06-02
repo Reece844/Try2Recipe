@@ -32,8 +32,7 @@ export const PTitle = styled.section`
 
 export const IngContent = styled.section`
 
-    padding: 0 0 20px 36px;
-
+  padding: 0 0 20px 36px;
   width: 35%;
   text-align: left;
   position: relative;
@@ -42,6 +41,13 @@ export const IngContent = styled.section`
   line-height: 1.6em;
   font-family:"sans-serif";
   font-weight:600;
+
+  @media (max-width: 700px) {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 100%;
+    float:right;
+  }
 
   ul {
     padding: 0 0 10px 20px;
@@ -105,6 +111,13 @@ export const PostContent = styled.fieldset`
   position: relative;
   margin-bottom:100px;
   padding: 0 0 20px 36px;
+
+  @media (max-width: 700px) {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 100%;
+    
+  }
 
   
 

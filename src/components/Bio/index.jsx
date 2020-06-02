@@ -1,8 +1,10 @@
 import React from 'react';
-import { AUTHOR, SITE_URL, PROFILE } from '~/constants';
+import { SITE_URL, PROFILE } from '~/constants';
 import { Wrapper } from './styled';
+import PropTypes from 'prop-types';
 
-const Bio = () => (
+
+const Bio = ({auth,}) => (
   <Wrapper>
     
     <a
@@ -11,11 +13,15 @@ const Bio = () => (
       rel="noreferrer noopener"
     >
       <span>
-        by {AUTHOR}
+        by {auth}
         <br />
       </span>
     </a>
   </Wrapper>
 );
+
+Bio.propTypes = {
+  author: PropTypes.string,
+};
 
 export default Bio;

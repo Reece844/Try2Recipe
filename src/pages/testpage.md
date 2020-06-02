@@ -7,6 +7,7 @@ title: "Baby Yoda's Favorite Stew"
 date: "2018-01-01T00:00:00.000Z"
 summary: "This is baby yoda's favorite stew that he likes to make when he doesn't feel good."
 image: /../yoda.jpg
+author: "Bob"
 ingredients: ["1 cup flour","2 cups of water", "pinch of salt","tablespoon of sauce"]
 ---
 

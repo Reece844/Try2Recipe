@@ -30,6 +30,7 @@ export const pageQuery = graphql`
         path
         category
         tags
+        author
         date
         ingredients
         components {

@@ -38,6 +38,7 @@ const Layout = ({ children, location }) => (
                 title
                 category
                 summary
+                author
                 tags
                 image {
                   publicURL

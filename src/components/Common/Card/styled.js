@@ -13,18 +13,31 @@ export const TagWrapper = styled.div`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  @media (max-width: 414px) {
+    margin: 0 0 16px;
+    padding: 0 0 16px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
 `;
 
 export const StyledArticle = styled.article`
   display: inline-block;
   word-wrap: break-word;
   padding: 10px 10px 16px;
-  width: 25%;
+  float:left;
   font-size: 14px;
   vertical-align: top;
+  width: 25%;
 
+  @media (max-width: 700px) {
+    margin-left:20%;
+    width: 60%;
+  }
 
   & > div {
+    position:relative;
     top: 0;
     padding: 14px;
     background-color: ${({ theme: { backgroundColor } }) => backgroundColor};

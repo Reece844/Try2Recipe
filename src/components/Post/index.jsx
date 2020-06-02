@@ -20,6 +20,7 @@ const PostTemplate = ({
         title,
         tags = [],
         ingredients = [],
+        author,
         image: {
           childImageSharp: {
             fluid
@@ -101,7 +102,7 @@ const PostTemplate = ({
           ))}
         </Tags>
       )}          
-      <Bio />
+      <Bio auth={author} />
 
       <IngContent>
       <fieldset>
