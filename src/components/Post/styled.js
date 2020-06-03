@@ -33,7 +33,7 @@ export const PTitle = styled.section`
 
 export const IngContent = styled.section`
 
-  padding: 0 0 20px 36px;
+  padding: 0 0 0 0;
   width: 35%;
   text-align: left;
   position: relative;
@@ -111,7 +111,7 @@ export const PostContent = styled.fieldset`
   text-align: left;
   position: relative;
   margin-bottom:100px;
-  padding: 0 0 20px 36px;
+  padding: 0 0 0px 36px;
 
   @media (max-width: 700px) {
     margin-left: 30px;
