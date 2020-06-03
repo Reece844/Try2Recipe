@@ -6,6 +6,7 @@ export const Tags = styled.div`
   border-top-width: 1px;
   border-top-style: solid;
 padding-top:15px;
+padding-left: 10px;
   a {
     margin: 0 0 0 4px;
     color: #000;
@@ -51,7 +52,7 @@ export const IngContent = styled.section`
 
   ul {
     padding: 0 0 10px 20px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight:565;
   }
 
@@ -124,7 +125,7 @@ export const PostContent = styled.fieldset`
   h2 {
     padding: 0 5px 20px 20px;
     
-    font-size: 16px;
+    font-size: 14px;
     font-weight:565;
   }
 
@@ -181,7 +182,7 @@ export const PostContent = styled.fieldset`
   }
   p {
     margin: 16px 0 0;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   blockquote {

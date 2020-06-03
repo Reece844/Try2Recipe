@@ -11,7 +11,9 @@ export const Wrapper = styled.section`
     color: #000;
   }
   font-weight: 700;
-  span,
+  span{
+    padding-left: 10px;
+  }
   img {
     display: inline-block;
     vertical-align: middle;
