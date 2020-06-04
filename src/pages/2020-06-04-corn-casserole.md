@@ -5,7 +5,7 @@ image: /corncasserole.jpg
 tags:
   - Corn
   - Casserole
-  - Holiday
+  - Holidays
 category: Dinner
 summary: Bobby's favorite corn casserole.
 ingredients:
