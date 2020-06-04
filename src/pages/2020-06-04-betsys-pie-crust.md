@@ -5,7 +5,7 @@ image: /piecrust.jpg
 tags:
   - Dessert
   - Pie
-  - Holiday
+  - Holidays
   - Thanksgiving
   - Christmas
 category: Dessert
