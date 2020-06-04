@@ -48,12 +48,15 @@ export const IngContent = styled.section`
     margin-right: 30px;
     width: 100%;
     float:right;
+    padding-left: 36px;
+
   }
 
   ul {
-    padding: 0 0 10px 20px;
     font-size: 14px;
     font-weight:565;
+    text-indent: -1.5em;
+    padding-left: 2.2em;
   }
 
   h4 {
