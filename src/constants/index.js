@@ -10,7 +10,7 @@ exports.NAME = 'Bapa\'s Kitchen';
 exports.TITLE = 'Bapa\'s Kitchen';
 exports.PREFIX = 'Robert Engl | ';
 exports.AUTHOR = 'Robert Engl';
-exports.EMAIL = 'yocee57@gmail.com';
+exports.EMAIL = 'acornbob@aol.com';
 exports.KEYWORDS = [
   'Gatsby',
   'ReactJS',
