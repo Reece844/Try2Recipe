@@ -1,5 +1,5 @@
 ---
-title: Roasted Sweet Potatoes with sriracha
+title: Roasted Sweet Potatoes with Sriracha
 author: Liz Engl
 image: /roasted-sweet-potatoes-with-sriracha-and-lime-recipe.jpg
 category: side dish
