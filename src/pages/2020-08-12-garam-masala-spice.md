@@ -15,4 +15,4 @@ ingredients:
   - 1 1/2 tsp Ground black pepper
 path: /garam_masala
 ---
-It is best to toast whole spices and grind fesh
+It is best to toast whole spices and grind fresh
