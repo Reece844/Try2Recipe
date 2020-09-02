@@ -2,6 +2,10 @@
 title: Greek-Style Lemon Roasted Potatoes
 author: Allrecipes
 image: /greek-style-lemon-roasted-potatoes.jpg
+tags:
+  - Breakfast
+  - Lunch
+  - Dinner
 category: Breakfast,  Lunch or Dinner
 summary: Mom's favorite
 ingredients:
