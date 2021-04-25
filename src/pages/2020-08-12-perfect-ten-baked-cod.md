@@ -13,7 +13,7 @@ ingredients:
   - 1 tablespoon chopped fresh parsley
   - 1 tablespoon chopped green onion
   - 1 lemon, cut into wedges
-path: /perfect_ten_baked_cod
+path: /perfect_ten_baked_cod/
 ---
 1. Preheat oven to 400 degrees F (200 degrees C).
 2. Place 2 tablespoons butter in a microwave-safe bowl; melt in microwave on high, about 30 seconds. Stir buttery round crackers into melted butter.
