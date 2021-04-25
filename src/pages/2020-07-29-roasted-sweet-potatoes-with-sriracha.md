@@ -11,7 +11,7 @@ ingredients:
   - 2 teaspoons sriracha, plus more as needed
   - 1½ pounds sweet potatoes, cut into 1-inch chunks
   - Coarsely chopped fresh cilantro, for serving
-path: /roasted sweet potatoes with Sriracha
+path: /roasted_sweet_potatoes_with_Sriracha/
 ---
 6 servings (as a side)
 
