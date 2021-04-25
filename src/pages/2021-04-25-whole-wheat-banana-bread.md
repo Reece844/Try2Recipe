@@ -2,7 +2,9 @@
 title: Whole Wheat Banana Bread
 author: Williams-Sonoma Muffins & Quick Breads
 image: /banana-bread.jpeg
-category: dessert
+tags:
+  - Dessert
+category: Dessert
 summary: This recipe is one of my regulars
 ingredients:
   - 2 1/2 cups (10oz) whole wheat flour
