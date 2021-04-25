@@ -2,7 +2,9 @@
 title: Roasted Sweet Potatoes with Sriracha
 author: Liz Engl
 image: /roasted-sweet-potatoes-with-sriracha-and-lime-recipe.jpg
-category: side dish
+tags:
+  - Side
+category: Side
 summary: This recipe has deep flavor
 ingredients:
   - Zest and juice of one lime
