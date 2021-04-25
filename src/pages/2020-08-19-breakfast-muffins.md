@@ -2,9 +2,13 @@
 title: Breakfast Muffins
 author: Martha Stewart (modified)
 image: /breakfast-muffins-ms.jpeg
+tags:
+  - Breakfast
 category: Breakfast
 summary: Good way to start your day
-path: /breakmuffins_ms_modified
+ingredients:
+  - See recipe
+path: /breakmuffins_ms_modified/
 ---
 Dry ingredients in a mixing bowl: 
 
