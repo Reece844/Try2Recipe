@@ -1,7 +1,7 @@
 ---
 title: Whole Wheat Banana Bread
 author: Williams-Sonoma Muffins & Quick Breads
-image: /banana-bread-whoe-wheat.jpg
+image: /banana-bread.jpeg
 category: Quick Bread
 summary: This recipe is one of my regulars
 ingredients:
