@@ -3,7 +3,7 @@ title: Tinos Artichoke Bread Pudding
 author: Diane Kochilas
 image: /tinos-artichoke-bread-pudding.jpg
 tags:
-  - Mediterrian
+  - Mediterranean
   - Casserole
 category: Dinner
 summary: This recipe is real good
