@@ -3,6 +3,9 @@ title: Perfect Ten Baked Cod
 author: Bob Engl
 image: /perfect_ten_cod.jpg
 category: Dinner
+tags:
+  - Seafood
+  - Dinner
 summary: We've used this many times
 ingredients:
   - 4 tablespoons butter, divided
