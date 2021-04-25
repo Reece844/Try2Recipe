@@ -2,8 +2,13 @@
 title: Mixed Greens, Carrot and Chickpea Salad with Lemon Dressing
 author: Liz Engl
 image: /mixed-greens-carrot-lemon-dressing-salad.jpeg
+tags:
+  - Dinner
+  - Side
 category: Dinner
 summary: This recipe is good
+ingredients:
+  - See recipe
 path: /Mixed_Greens_Carrot_and_Chickpea_Salad_with_Lemon_Dressing/
 ---
 **Dressing:**
