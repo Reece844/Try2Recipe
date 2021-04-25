@@ -13,7 +13,7 @@ ingredients:
   - 2 cups (16oz) mashed ripe banana (4 large bananas)
   - Vanilla 1 tsp
   - 1 cup (4 oz) chopped pecans or walnuts, optional
-path: /whole wheat banana bread/
+path: /whole_wheat_banana_bread/
 ---
 Preheat oven to 350F.  Grease and flour 2 medium (8 1/2 inch) loaf pans.
 
