@@ -23,7 +23,7 @@ ingredients:
   - 1 1/2 cups(150 g) grated graviera or other mild, yellow sheep's-milk
     cheese.  Note we used 1/2 lb mozzarella and 1/2 cup roamano
   - 3 large eggs whisked with 2 ½ cups of milk
-path: /tinos_artichoke_bread_pudding
+path: /tinos_artichoke_bread_pudding/
 ---
 1. Bring a medium pot of salted water to a rolling boil. Add the artichoke hearts and blanch for 3 to 4 minutes, until soft. Remove with a slotted spoon and set aside . When cool enough to handle, coarsely chop the artichokes.
 2. In a heavy medium skillet, heat the remaining 3 tablespoons butter with the olive oil over medium heat. Add the onion and cook until wilted and lightly colored, about 12 minutes. Stir in the garlic and cook all together, stirring, for about 1 minute.
