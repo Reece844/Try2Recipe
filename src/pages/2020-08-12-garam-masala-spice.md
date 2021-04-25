@@ -3,7 +3,7 @@ title: Garam Masala spice
 author: Bob Engl
 image: /garam_masala.jpeg
 tags:
-  - spice
+  - Spice
 category: Spice
 summary: Indian spice
 ingredients:
