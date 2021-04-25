@@ -6,7 +6,7 @@ tags:
   - Breakfast
   - Lunch
   - Dinner
-category: Breakfast,  Lunch or Dinner
+category: Dinner
 summary: Mom's favorite
 ingredients:
   - 3 pounds potatoes, peeled and cut into thick wedges
@@ -16,7 +16,7 @@ ingredients:
   - 1 teaspoon oregano
   - 1/2 teaspoon ground black pepper
   - 3 cups chicken broth
-path: /Greek style lemon roasted potatoes
+path: /Greek_style_lemon_roasted_potatoes/
 ---
 Preheat oven to 400 degrees F (200 degrees C)
 
