@@ -13,6 +13,6 @@ ingredients:
   - 1 tsp Ground Cinnamon
   - 1/2 tsp Ground nutmeg
   - 1 1/2 tsp Ground black pepper
-path: /garam_masala
+path: /garam_masala/
 ---
 It is best to toast whole spices and grind fresh
