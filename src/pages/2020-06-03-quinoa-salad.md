@@ -12,13 +12,14 @@ ingredients:
   - 1 ½ cups beans, rinsed if canned (I used garbanzo beans)
   - 1 ½ Tbsp red-wine vinegar
   - 1 ½ cups cooked corn (if using fresh, cut from about 2 large ears)
-  - ¾ cup finely chopped green bell pepper
+  - ¾ cup finely chopped bell pepper
   - 2 pickled jalapeno chilies, seeded and minced
   - "Dressing:"
   - 5 Tbsp fresh lime juice
   - 1 tsp salt
   - 1 ¼ tsp ground cumin
   - 1/3 cup good olive oil
+  - 1/4 cup finely chopped cilantro
 path: /quinoasalad/
 ---
 In a bowl wash quinoa in a least 5 changes of cold water, rubbing the grains and letting them settle before pouring off most of the water, until the water runs clear, then drain into a large fine sieve.
