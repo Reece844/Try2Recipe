@@ -3,7 +3,7 @@ title: Breakfast Casserole
 author: Jenny Engl
 image: /breakfast_casserole.jpeg
 tags:
-  - Our Christmas go to breakfast
+  - breakfast
 category: Breakfast
 summary: This recipe has become a tradition
 ingredients:
