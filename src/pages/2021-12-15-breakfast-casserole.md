@@ -15,7 +15,7 @@ ingredients:
   - 2 cups cheddar cheese, shredded
   - 6-7 eggs, large
   - small can mushrooms (optional)
-path: /breakfast casserole
+path: /breakfast_casserole
 ---
 Preheat oven to 375 degrees.
 
