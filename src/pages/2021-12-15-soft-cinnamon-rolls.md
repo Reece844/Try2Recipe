@@ -1,6 +1,6 @@
 ---
 title: Soft Cinnamon Rolls
-author: King Arthur/Bob
+author: King Arthur
 image: /soft_cinnamon-buns_ka.jpg
 category: Baked good
 summary: "The chief attribute setting these rolls apart from peers is their
