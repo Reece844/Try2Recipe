@@ -2,6 +2,8 @@
 title: Soft Cinnamon Rolls
 author: King Arthur
 image: /soft_cinnamon-buns_ka.jpg
+tags:
+  - breakfast
 category: Baked good
 summary: "The chief attribute setting these rolls apart from peers is their
   texture.  While all cinnamon rolls are delicious straight from the oven, they
