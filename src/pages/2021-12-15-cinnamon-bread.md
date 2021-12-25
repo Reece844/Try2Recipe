@@ -1,6 +1,6 @@
 ---
 title: Cinnamon Bread
-author: King Arthur/Bob
+author: King Arthur
 image: /cinnamon-bread.jpg
 tags:
   - bread
